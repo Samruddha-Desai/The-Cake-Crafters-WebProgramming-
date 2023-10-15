@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+    <header class="header">
+        <h1>User Profile</h1>
+    </header>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="profile-info">
+                <img src="profile.jpg" alt="Profile Picture">
+                <h2>John Doe</h2>
+                <p class="email">Email: john@example.com</p>
+            </div>
+            <address class="address">
+                <h3>Shipping Address</h3>
+                <p>123 Main Street</p>
+                <p>New York, NY 10001</p>
+                <p>USA</p>
+            </address>
+            <button id="editProfile" class="btn">Edit Profile</button>
+        </aside>
+        <main class="main-content">
+            <section class="order-history">
+                <h2>Order History</h2>
+                <ul id="orderList" class="order-list">
+                    <!-- Order history items dynamically populated by JavaScript -->
+                </ul>
+            </section>
+            <section class="cart-details">
+                <h2>Shopping Cart</h2>
+                <ul id="cartList" class="cart-list">
+                    <!-- Cart items dynamically populated by JavaScript -->
+                </ul>
+            </section>
+            <section class="order-tracking">
+                <h2>Order Tracking</h2>
+                <p>Your recent order is on its way!</p>
+                <p>Order ID: <span id="orderId" class="order-id">123456</span></p>
+                <button id="trackOrder" class="btn track-btn">Track Order</button>
+            </section>
+        </main>
+    </div>
+    <footer class="footer">
+        <p>&copy; 2023 Your E-Commerce Website</p>
+    </footer>
+    <script src="profile.js"></script>
+</body>
+</html>
